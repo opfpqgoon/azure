@@ -237,7 +237,7 @@ class AzureRMVirtualNetworkGateway(AzureRMModuleBase):
             gateway_type=dict(type='str', default='vpn', choices=['vpn', 'express_route']),
             vpn_type=dict(type='str', default='route_based', choices=['route_based', 'policy_based']),
             enable_bgp=dict(type='bool', default=False),
-            sku=dict(default='VpnGw1', choices=['VpnGw1', 'VpnGw2', 'VpnGw3', 'Standard', 'Basic', 'HighPerformance']),
+            sku=dict(default='VpnGw1', choices=['VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ', 'VpnGw2AZ', 'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'Basic']),
             bgp_settings=dict(type='dict', options=bgp_spec),
             virtual_network=dict(type='raw', aliases=['virtual_network_name'])
         )
